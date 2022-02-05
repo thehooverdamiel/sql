@@ -1,5 +1,5 @@
 create table expenses(
-        exp_source varchar(255) not null,
+        source varchar(255) not null,
         amount dec(6, 2) not null,
         date date not null,
         type enum('groceries', 
