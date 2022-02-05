@@ -1,14 +1,18 @@
 create table expenses(
-        exp_source varchar(255),
-        amount dec(6, 2),
-        date date,
+        exp_source varchar(255) not null,
+        amount dec(6, 2) not null,
+        date date not null,
         type enum('groceries', 
                   'video games', 
                   'other hobbies', 
-                  'rent & bills', 
+                  'rent & bills',
                   'takeout',
                   'home goods',
-                  'gas & car'),
+                  'car & travel',
+                  'medical',
+                  'subscriptions',
+                  'sunny',
+                  'alcohol',
+                  'personal') not null,
         notes varchar(400)
-                  
 )
